@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Word Frequency Search</title>
+  <title>Word Frequency Finder</title>
   <meta name="description" content="Simple UI Setup">
   <meta name="author" content="Author Name">
 
@@ -17,15 +17,19 @@
       <h1>Word Frequency Finder</h1>
       <div id="description-area">
         <h2>Paste your text below to find the word frequency.</h2>
+        <p><em>Note: numbers and special characters (e.g. !@#$%^*) will be stripped from text.</em></p>
       </div>
       <form action="" id="main-form">
         <div class="input-div">
           <textarea id="main-input" placeholder="Enter your text here..." form="main-form" rows="25"></textarea>
         </div>
         <div class="btn-div">
-          <input type="button" class="btn" value="Add Your Button Text" onclick="convertCleanTextToArray();">
+          <input type="button" class="btn" value="Get Word Frequency" onclick="printWordsToPage();">
         </div>
       </form>
+      <div id="results-area">
+        <!-- JS to print results here -->
+      </div>
     </div>
   </div>
 
