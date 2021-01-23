@@ -1,4 +1,4 @@
-#Word Frequency Finder
+# Word Frequency Finder
 
 Live at: wordfrequencyfinder.netlify.app
 
