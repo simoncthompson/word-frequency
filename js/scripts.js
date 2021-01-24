@@ -19,10 +19,10 @@ function buildWordFrequencyObject() {
       frequencyObject[textArray[i]]++;
     } else {
       frequencyObject[textArray[i]] = 1;
-      }
     }
-    return frequencyObject;
   }
+  return frequencyObject;
+}
 
 function sortFrequencyObjectToArray() {
   let frequencyObject = buildWordFrequencyObject();
@@ -36,10 +36,20 @@ function sortFrequencyObjectToArray() {
   return sortedArray;
 }
 
+function clearResults() {
+  document.getElementById("results-area").innerHTML = "";
+}
+
+function clearAll(){
+  location.reload();
+}
+
 function printWordsToPage() {
+  clearResults();
   sortedArray = sortFrequencyObjectToArray();
   for (i = 0; i < sortedArray.length; i++) {
-    if (sortedArray[i][0] == "") {
+    if (sortedArray[i][0] == "" ||
+      (STOPWORDS.includes(sortedArray[i][0]) && document.getElementById("no-stop-words-toggle").checked == true)) {
       continue
     } else {
       p = document.createElement("p");

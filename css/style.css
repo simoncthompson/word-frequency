@@ -4,7 +4,7 @@ body {
     margin: 0;
 }
 
-p, a, h1, h2, h3 {
+* {
     font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -61,6 +61,14 @@ textarea {
 
 textarea::placeholder {
   font-family: courier;
+}
+
+#clear-div {
+  margin: 20px 0px 30px 0px;
+}
+
+#no-stop-words-toggle-area {
+  margin: 10px 0px 30px 0px;
 }
 
 .btn {

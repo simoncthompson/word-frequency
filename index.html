@@ -26,6 +26,12 @@
         <div class="btn-div">
           <input type="button" class="btn" value="Get Word Frequency" onclick="printWordsToPage();">
         </div>
+        <div id="no-stop-words-toggle-area">
+          <input type="checkbox" id="no-stop-words-toggle" checked="true">Remove Stop Words? (e.g. and, or, is, he, she etc.)</input>
+        </div>
+        <div id="clear-div">
+          <a href="#" id="clear" onclick="clearAll(); return false;">Clear All</a>
+        </div>
       </form>
       <div id="results-area">
         <!-- JS to print results here -->
